@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toast.makeText(MainActivity.this, "Firebase is connected", Toast.LENGTH_LONG).show();
 
-
-
         ed1 = findViewById(R.id.ed1);
         ed2 = findViewById(R.id.ed2);
         ed3 = findViewById(R.id.ed3);
@@ -66,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 ed6.setText(String.valueOf(bal));
             }
         });
-
-
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override

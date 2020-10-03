@@ -5,42 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
+    android:background="#8C8B8F"
     android:gravity="center"
     tools:context=".MainActivity">
 
-
+<!--    Labeling Inventory Management System -->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        >
+        android:background="#626A69">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Inventory Management System"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#FFFFFF"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15sp"
             android:gravity="center"/>
     </LinearLayout>
-
+<!--Product Name-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product Name"/>
-
+            android:text="Product Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ed1"
             android:ems="10"/>
     </LinearLayout>
-
+<!--Price-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +57,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price"/>
+            android:text="Price"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -57,7 +69,7 @@
             android:id="@+id/ed2"
             android:ems="10"/>
     </LinearLayout>
-
+<!--Quantity-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +78,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quantity"/>
+            android:text="Quantity"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -74,7 +90,7 @@
             android:id="@+id/ed3"
             android:ems="10"/>
     </LinearLayout>
-
+<!--Subtotal-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,19 +99,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Subtotal"/>
+            android:text="Subtotal"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/colorAccent"
+            android:background="#D3E1E0"
             android:id="@+id/txtsub"
             android:textColor="#fff"
             android:enabled="false"
             android:ems="10"/>
     </LinearLayout>
-
+<!--Payment-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -104,18 +124,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Payment"/>
+            android:text="Payment"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/colorAccent"
+            android:background="#D3E1E0"
             android:id="@+id/txtpay"
             android:textColor="#fff"
             android:ems="10"/>
     </LinearLayout>
-
+<!--Balance-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,22 +148,27 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Balance"/>
+            android:text="Balance"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/colorAccent"
+            android:background="#D3E1E0"
             android:id="@+id/txtbal"
             android:textColor="#fff"
 
             android:ems="10"/>
     </LinearLayout>
-
+<!--Button-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal">
 
         <Button
@@ -147,7 +176,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/btn1"
             android:text="Add"
-            android:background="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#FFFF"
           />
     </LinearLayout>
 
@@ -170,6 +201,9 @@
                android:id="@+id/t1"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
+               android:textColor="#FFFFFF"
+               android:textSize="17dp"
+               android:textStyle="bold"
                android:text="Product Name"
                />
 
@@ -178,6 +212,9 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="Price"
+                 android:textColor="#FFFFFF"
+                 android:textSize="17dp"
+                 android:textStyle="bold"
                  />
 
              <TextView
@@ -185,6 +222,9 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="Quantity"
+                 android:textColor="#FFFFFF"
+                 android:textSize="17dp"
+                 android:textStyle="bold"
                  />
 
              <TextView
@@ -192,6 +232,9 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:text="Total"
+                 android:textColor="#FFFFFF"
+                 android:textSize="17dp"
+                 android:textStyle="bold"
                  />
          </TableRow>
         </TableLayout>
