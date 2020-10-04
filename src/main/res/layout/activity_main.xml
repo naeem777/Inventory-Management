@@ -5,238 +5,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#8C8B8F"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-<!--    Labeling Inventory Management System -->
-    <LinearLayout
+<!--Labeling SMS-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="Student Management System"
+        android:textColor="#FFFDFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+<!--Name-->
+    <EditText
+        android:id="@+id/name_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#626A69">
+        android:textSize="20sp"
+        android:hint="Name"
+        android:textColorHint="#BA2BD3"
+        android:inputType="text"
+        android:maxLength="25"
+        android:textStyle="bold"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Inventory Management System"
-            android:textColor="#FFFFFF"
-            android:textSize="27dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="15sp"
-            android:gravity="center"/>
-    </LinearLayout>
-<!--Product Name-->
-    <LinearLayout
-        android:layout_width="wrap_content"
+<!--    Email-->
+    <EditText
+        android:id="@+id/email_id"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Product Name"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ed1"
-            android:ems="10"/>
-    </LinearLayout>
-<!--Price-->
-    <LinearLayout
-        android:layout_width="wrap_content"
+        android:hint="Email"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#BA2BD3"
+        />
+
+<!--    CGPA-->
+    <EditText
+        android:id="@+id/cgpa_id"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:hint="CGPA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#BA2BD3"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
+<!--Add Button-->
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="186dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#F8B138D3"
+        android:text="SUBMIT"
+       android:fontFamily="serif"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ed2"
-            android:ems="10"/>
-    </LinearLayout>
-<!--Quantity-->
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView_id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        >
+    </TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quantity"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ed3"
-            android:ems="10"/>
-    </LinearLayout>
-<!--Subtotal-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Subtotal"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:background="#D3E1E0"
-            android:id="@+id/txtsub"
-            android:textColor="#fff"
-            android:enabled="false"
-            android:ems="10"/>
-    </LinearLayout>
-<!--Payment-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Payment"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:background="#D3E1E0"
-            android:id="@+id/txtpay"
-            android:textColor="#fff"
-            android:ems="10"/>
-    </LinearLayout>
-<!--Balance-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Balance"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            />
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:background="#D3E1E0"
-            android:id="@+id/txtbal"
-            android:textColor="#fff"
-
-            android:ems="10"/>
-    </LinearLayout>
-<!--Button-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn1"
-            android:text="Add"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:background="#FFFF"
-          />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="360dp"
-            android:id="@+id/tb1"
-            android:stretchColumns="*">
-
-         <TableRow android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:id="@+id/tbrow1">
-
-           <TextView
-               android:id="@+id/t1"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textColor="#FFFFFF"
-               android:textSize="17dp"
-               android:textStyle="bold"
-               android:text="Product Name"
-               />
-
-             <TextView
-                 android:id="@+id/t2"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:text="Price"
-                 android:textColor="#FFFFFF"
-                 android:textSize="17dp"
-                 android:textStyle="bold"
-                 />
-
-             <TextView
-                 android:id="@+id/t3"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:text="Quantity"
-                 android:textColor="#FFFFFF"
-                 android:textSize="17dp"
-                 android:textStyle="bold"
-                 />
-
-             <TextView
-                 android:id="@+id/t4"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:text="Total"
-                 android:textColor="#FFFFFF"
-                 android:textSize="17dp"
-                 android:textStyle="bold"
-                 />
-         </TableRow>
-        </TableLayout>
-    </LinearLayout>
 </LinearLayout>
+
+
+
+
+
